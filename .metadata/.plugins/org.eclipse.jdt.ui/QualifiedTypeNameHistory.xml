@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.io.StringBufferInputStream"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="java.net.URL"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.xni.QName"/>
+<fullyQualifiedTypeName name="br.gov.caixa.sibar.consulta_cobranca_bancaria.boleto.Consulta_boleto_desconto_Type"/>
+<fullyQualifiedTypeName name="DBScript"/>
+<fullyQualifiedTypeName name="org.apache.groovy.internal.util.Function"/>
+</qualifiedTypeNameHistroy>

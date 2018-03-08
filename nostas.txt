@@ -1,0 +1,4 @@
+MVN ALura
+L:\alura\mvn>mvn archetype:generate -DartifactId=produtos -DgroupId=br.com.lcarrudaf.maven -DinteractiveMode=false -DarchetypeArtifactId=maven-archetype-quickstart
+
+mvn surefire-report:report

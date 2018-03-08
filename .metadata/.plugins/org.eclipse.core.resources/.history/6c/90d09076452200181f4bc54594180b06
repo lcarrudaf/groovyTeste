@@ -1,0 +1,63 @@
+
+class Principal {
+ static void main(def args){
+	 /**
+	  * APOIO.2018.002.00.FTR-1801031417_DBAMV_FUNCTION_FNC_RET_CONDICAO_STATUS_PSND.SQL
+APOIO.2018.002.00.FTR-1801031417_APOIO-485_APOIO.sql
+GLOBAL.2018.001.00.FTR-1712011546_GLOBAL-90_GLOBAL.sql
+	  * */
+	 def scripts = []
+	 scripts.add('APOIO.2018.002.00.FTR-1801031417_DBAMV_FUNCTION_FNC_RET_CONDICAO_STATUS_PSND.SQL')
+	 scripts.add('APOIO.2018.002.00.FTR-1801031417_APOIO-485_APOIO.sql')
+	 scripts.add('GLOBAL.2018.001.00.FTR-1712011546_GLOBAL-90_GLOBAL.sql')
+	 
+	 try {
+		 
+		 scripts.sort { s1, s2 ->
+			 try {
+				 def s1Name = s1.name
+				 def s2Name = s2.name
+				 
+				 log.debug 's1 :' + s1.name + '\n'
+				 log.debug 's2 :' + s2.name + '\n'
+				 
+				 // MANEIRA ANTIGA, QUANDO OS SCRIPTS POSSUIAM O TIMESTAMP NA NOMENCLATURA
+				 def sScriptAntigo = s1.name =~ /(\d{10}.*\.sql)/
+				 if (sScriptAntigo){
+					 println 'Dentro do IF'
+					 s1Name = (s1.name =~ /(\d{10}.*\.sql)/)[0][1]
+					 println  's1Name: '+s1Name
+					 s2Name = (s2.name =~ /(\d{10}.*\.sql)/)[0][1]
+					 println  's2Name: '+s2Name
+				 }
+				 println 'Saiu do if'
+				 // COMPATIBILIDADE
+				 //						s1Name = (s1.name =~ /(\w{10}.*\.sql)/)[0][1]
+				 //						s2Name = (s2.name =~ /(\w{10}.*\.sql)/)[0][1]
+				 //                        s1Name <=> s2Name
+
+			 }
+			 catch (Exception e)
+			 {
+				 String msg = "script out of pattern: [${s1}] or [${s2}]"
+				 errorLog.withWriterAppend(MVETL_DEFAULT_CHARSET, { writer -> writer << msg  << "\r\n"} )
+				 log.debug msg
+
+				 throw e
+
+
+			 }
+		 }
+	 }
+	 catch (Exception e)
+	 {
+		 String msg = "invalid list: [${scripts}]"
+		 errorLog.withWriterAppend(MVETL_DEFAULT_CHARSET, { writer -> writer << msg  << "\r\n"} )
+		 log.debug msg
+
+		 throw e
+	 }*/
+
+	 
+ }
+}

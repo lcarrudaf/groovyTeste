@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.jst.ws.client.type.java">
+		<item value="http://localhost:8080/BAR_MSG_BARRAMENTO_LIB/Manutencao_Cobranca_Bancaria_Externo.wsdl"/>
+		<item value="http://localhost:8080/Leiautes/Consulta_Cobranca_Bancaria_Boleto.wsdl"/>
+		<item value="http://localhost:8080/Leiautes/Manutencao_Cobranca_Bancaria_Externo.wsdl"/>
+		<item value="http://localhost:8080/axis/services/editormv?wsdl"/>
+	</list>
+	<list key="org.eclipse.jst.ws.internal.consumption.ui.widgets.test.ClientTestWidget.sampleFolderText_">
+		<item value="sampleManutencao_cobranca_bancariaProxy"/>
+	</list>
+</section>

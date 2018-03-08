@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.6.1" timestamp="2017-12-12T17:24:24.390">
+<file name="L:\alura\mvn\produtos\src\main\java\br\com\lcarrudaf\maven\Produtos.java">
+<violation beginline="4" endline="4" begincolumn="30" endcolumn="33" rule="UnusedPrivateField" ruleset="Unused Code" package="br.com.lcarrudaf.maven" class="Produtos" variable="nome" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'nome'.
+</violation>
+<violation beginline="5" endline="5" begincolumn="30" endcolumn="34" rule="UnusedPrivateField" ruleset="Unused Code" package="br.com.lcarrudaf.maven" class="Produtos" variable="valor" externalInfoUrl="https://pmd.github.io/pmd-5.6.1/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'valor'.
+</violation>
+</file>
+</pmd>
